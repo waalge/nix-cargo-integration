@@ -38,11 +38,11 @@
         "pruned-racket-catalog": []
       },
       "locked": {
-        "lastModified": 1676513996,
-        "narHash": "sha256-FtdXG8d/tyAu7z21VY05nGAMk/eLiXbFk4JOi/M37wI=",
+        "lastModified": 1676747161,
+        "narHash": "sha256-cwFMX4ddZSiY5YIaU7jICYRkTbgZh7ceXBShevljU+Y=",
         "owner": "nix-community",
         "repo": "dream2nix",
-        "rev": "b4b491bd77dc3292a55b0fddd9f67e5f78c83214",
+        "rev": "a24f9098e61400610373737875ae3063eec16dc6",
         "type": "github"
       },
       "original": {
