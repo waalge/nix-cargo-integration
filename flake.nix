@@ -72,6 +72,13 @@
           simple-crate = {
             description = "A simple template with a Cargo crate pre-initialized";
             path = ./examples/simple-crate;
+            welcomeText = ''
+            # NCI Template .#simple-crate 
+
+            The default name of the crate is `my-crate`.
+            This set in both the `flake.nix`, and `Cargo.toml` file. 
+            Both must be editted to rename the crate.
+            '';
           };
         };
       };

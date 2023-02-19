@@ -10,14 +10,16 @@
     nci,
     ...
   }:
+  let 
+    # Set crate name
+    my-crate = "my-crate";
+  in 
     parts.lib.mkFlake {inherit inputs;} {
       systems = ["x86_64-linux"];
       imports = [nci.flakeModule];
       perSystem = {...}: {
-        # declare project
-        nci.projects."my-project" = {};
         # configure crates
-        nci.crates."my-crate" = {
+        nci.crates.${my-crate} = {
           # export crate (packages and devshell) in flake outputs
           export = true;
           # look at docs for more options
