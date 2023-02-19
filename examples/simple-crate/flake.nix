@@ -17,13 +17,14 @@
     parts.lib.mkFlake {inherit inputs;} {
       systems = ["x86_64-linux"];
       imports = [nci.flakeModule];
-      perSystem = {...}: {
+      perSystem = {self', ...}: {
         # configure crates
         nci.crates.${my-crate} = {
           # export crate (packages and devshell) in flake outputs
           export = true;
           # look at docs for more options
         };
+        devShells.default = self'.devShells.${my-crate};
       };
     };
 }
